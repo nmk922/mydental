@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700&family=Zen+Maru+Gothic:wght@300;400;500;700&display=swap');
+
+/* 
+ font-family: 'M PLUS Rounded 1c', sans-serif;
+ font-family: 'Zen Maru Gothic', sans-serif;
+ */
+
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    z-index: 1;
+}
+
+.wrapper{
+    width: 100%;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+
+/* header area */
+
+.header{
+    /* border: 4px solid red; */
+    font-family:'M PLUS Rounded 1c', sans-serif;
+    width: 100%;
+    height: 80px;
+    overflow: auto;
+    background-color:rgba(255, 255, 255, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.header a{
+    text-decoration: none;
+    color: #222;
+}
+
+.tel{
+    /* border: 2px dashed green; */
+    display: inline-flex;
+    flex-direction: column;
+    line-height: 0.8;
+    height: 100%;
+    margin-left: 13px; 
+    justify-content: center;
+
+}
+
+.tel a{
+    font-size: 20px;
+    font-weight: 50px;
+    
+}
+
+.header h1{
+    /* border: 2px solid purple; */
+    font-size: 2em;
+    color: rgb(0, 44, 138);
+    margin-left: 0;
+    text-align: center;
+}
+
+.header p{
+    color:rgb(0,0,0);
+    display: contents;
+}
+
+
+
+/* menu */
+
+#menu{
+    /* border: 2px solid red; */
+    padding-top: 80px;
+    height: auto;
+}
+
+#menu ul{
+    /* border-top: 1px solid rgb(255, 159, 80); */
+    border-bottom: 5px solid rgb(255, 159, 80);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-align: center;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: rgb(255, 159, 80);
+    
+    
+        
+}
+#menu ul li{
+    display: inline-flex;
+    margin-left: 2em;
+}
+
+#menu a{
+    color: #fff;
+    text-decoration: none;
+}
+    
+/*slider*/
+
+#slider{
+    /* border: 2px solid yellow; */
+    width: 100%;
+    height: 700px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.slider-text{
+    font-size: 1.4em;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    padding: 10px 10px 8px;
+    margin-bottom: 10px;
+    line-height: 110%;
+    white-space: nowrap;
+}
+
+.slider-text h3{
+    position: absolute;
+    background-color: #fff;
+    padding: 10px 10px 8px;
+    margin-bottom: 10px;
+    line-height: 130%;
+    white-space: nowrap;
+    letter-spacing: .38rem;
+    margin-bottom: 0.5rem;
+}
+
+#slideshow {
+    /* border: 2px solid blue; */
+    margin-top:50px;
+    margin-bottom: 50px;
+    position: relative;
+    width: 100%;
+    height:600px;
+ }
+ #slideshow img {
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 8;
+    opacity: 0.0;
+    object-fit:cover;
+    width:  1100px;
+    height: 650px;
+    border: 15px dotted rgb(255, 159, 80);
+    border-radius: 50px;
+    left:50%;
+    transform: translateX(-50%);
+ }
+ #slideshow img.active {
+    z-index: 10;
+    opacity: 1.0;
+    
+ }
+ #slideshow img.last-active {
+    z-index: 9;
+ }
+
+.section-header{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+/* .aboutus .section-header{
+    margin-top: 70px;
+} */
+.section-header hr{
+    border-top: 10px dotted #222;
+    border-width: 8px;
+    width: 15%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    opacity: 0.8;
+
+}
+
+
+/* 当院について */
+
+.aboutus{
+    /* border: 2px solid red; */
+    width: 50%;
+    padding: 70px;
+    margin: 0 auto;
+}
+
+.aboutus-item .paragraph{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    line-height: 37px;
+}
+
+
+
+
+/* 診療科目 */
+
+.medicalcourses{
+    /* border: dashed 2px black; */
+    width: 65%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 10px;
+    overflow: auto;
+}
+.medical-item{
+    width: 99%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+    justify-content: center;
+}
+
+.medical-item div {
+    /* border: solid 2px red; */
+    font-size: 23px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    padding: 1em 1em 1em 1em;
+    color: #222;
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 100%;
+    height: 130px;
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    place-content: center;
+}
+
+
+
+.medical-item i{
+    text-align: center;
+    margin-bottom: 3em;
+    color:rgb(255, 159, 80) ;
+    text-shadow: 0 2px 5px rgba(255, 170, 13, 0.25);
+}
+.medical-item i, .medical-item p {
+   
+    text-align: center;
+    margin: 0; 
+    padding: 0;
+}
+
+
+/* 診療時間 */
+
+.time{
+     /* border: 2px solid green; */
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    padding: 2%;
+    color: #ffffff;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: rgb(255, 159, 80);
+}
+
+.time hr{
+    border-top: 10px dotted #fff;
+    border-width: 8px;
+    width: 15%;
+    margin: auto;
+    margin-top: 10px;
+    opacity: 0.8;
+
+}
+
+
+.table {
+    /* border: solid 1px black; */
+    width: 450px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+table{
+    margin: auto;
+    margin-top: 50px;
+    height: 120px;
+    width: 450px;
+    color: #ffffff;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table th {
+    padding: 10px;
+    /* background-color: #ffffff;
+    color: #222222; */
+}
+  
+  table td {
+    padding: 3px 10px;
+}
+
+  table th, table td{
+      border: solid 1px #ffffff
+}
+
+
+
+
+/* アクセス */
+
+.access{
+
+     /* border: 2px solid blue; */
+     width: 100%;
+     height: 750px;
+     margin: auto;
+     padding: 70px;
+     color: #222222;
+     font-family: 'M PLUS Rounded 1c', sans-serif;
+     background-color: #fff;
+}
+
+.address{
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+.footer{
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    padding: 70px;
+    color: #ffffff;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: rgb(255, 159, 80)
+   
+}
+
+.footer a{
+    /* border: solid 1px red; */
+    color: #fff;
+    font-size: 30px;
+}
+
+
+.footer2{
+    /* border: solid 2px green; */
+    width: 100%;
+    font-size: 8px;
+    color: #fff;
+    background-color: rgb(100, 100, 100);
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+
+/* mobile */
+
+/* mobile index */
+/* @media screen and (max-width: 768px){
+   
+   
+    #menu{
+            width: 0;
+            height: 100%;
+            background-color: rgba(255, 226, 163, 0.9);
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            overflow: hidden;
+            transition: 1s;
+            z-index: 9;
+    }
+    #menu ul{
+        
+        font-size: 35px;
+        list-style: none;
+        text-align: center;
+        margin: 40px auto;
+        border: none;
+        
+    }
+    #menu ul li{
+        display: block;
+        margin: 0 auto;
+        
+    }
+
+    .close{
+        font-size: 40px;
+        color: rgb(83, 83, 83);
+        position: absolute;
+        display: block;
+        top: 1em;
+        right: 0.5em;
+    }
+    
+    .open{
+        display: block;
+        font-size: 25px;
+    } */
